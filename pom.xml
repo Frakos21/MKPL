@@ -12,6 +12,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.organization>Frakos21</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
@@ -24,31 +26,24 @@
     </dependencies>
 
     <distributionManagement>
-    <repository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
-    </repository>
-    <snapshotRepository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
-    </snapshotRepository>
-</distributionManagement>
-         <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>3.0.0</version>
-        </plugin>
-    </plugins>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
+        </repository>
+        <snapshotRepository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
+        </snapshotRepository>
+    </distributionManagement>
 
-    <properties>
-         <maven.compiler.source>1.8</maven.compiler.source>
-         <maven.compiler.target>1.8</maven.compiler.target>
-         <sonar.organization>Frakos21</sonar.organization>
-         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
-</build>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
