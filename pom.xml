@@ -26,11 +26,11 @@
     <distributionManagement>
     <repository>
         <id>github</id>
-        <url>https://maven.pkg.github.com/Ghazaaaaa/COTS</url>
+        <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
     </repository>
     <snapshotRepository>
         <id>github</id>
-        <url>https://maven.pkg.github.com/Ghazaaaaa/COTS</url>
+        <url>https://maven.pkg.github.com/Frakos21/MKPL</url>
     </snapshotRepository>
 </distributionManagement>
          <build>
@@ -41,6 +41,13 @@
             <version>3.0.0</version>
         </plugin>
     </plugins>
+
+    <properties>
+         <maven.compiler.source>1.8</maven.compiler.source>
+         <maven.compiler.target>1.8</maven.compiler.target>
+         <sonar.organization>Frakos21</sonar.organization>
+         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
 </build>
 
 
